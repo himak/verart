@@ -1,0 +1,30 @@
+/* Screens sizes */
+$screen-xs: 320px;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+// Fonts
+$font-body: 'Open Sans', sans-serif;
+$font-heading: 'Open Sans', sans-serif;
+
+// Colors
+$grey: #F3F3F3;
+$black: #323232;
+$green: #8CBE41;
+$yellow: #FED100;
+
+// Background
+$bg-grey: $grey;
+
+// Navigation
+$nav-bg: $grey;
+$nav-link: $black;
+$nav-link-hover: $green;
+
+// Button
+$btn-bg: $yellow;
+$btn-color: $black;
+$btn-bg-hover: $black;
+$btn-color-hover: $yellow;

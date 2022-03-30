@@ -1,0 +1,125 @@
+html { box-sizing: border-box; scroll-behavior: smooth;}
+
+*, *:before, *:after { 
+	box-sizing: inherit;
+	// outline: 1px solid red;
+}
+
+html, body { height: 100%; margin: 0; padding: 0; }
+
+body {
+	color: #323232;
+	font-size: 100%;
+	font-family: $font-body;
+	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	height: auto;
+}
+
+a { 
+	text-decoration: none;
+
+	&:hover,
+	&:active {
+		transition: all .3s ease-out;
+	}
+}
+
+strong { font-weight: 600; }
+
+button,
+input[type="submit"],
+input[type="button"] {
+ 	border: none;
+   	cursor: pointer;
+    appearance: none;
+}
+
+input,
+textarea { 
+	border: none;
+	appearance: none;
+	border-radius: 10px;
+	padding: 20px 15px;
+	font-size: 18px;
+	margin: 10px 0 20px;
+	font-weight: 300;
+	width: 100%;
+
+	&:focus {
+		outline: 1px solid $yellow;
+		border-radius: 10px;
+	}
+}
+
+textarea {
+	min-height: 120px;
+}
+
+.container {
+	display: flex;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+
+	@media (max-width: $screen-sm) {
+		flex-direction: column;
+	}
+}
+
+.sr-only {
+	display: none;
+}
+
+.bg-grey {
+	background-color: $bg-grey;
+}
+
+// Button
+.btn {
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: $btn-color;
+	background-color: $btn-bg;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 20px;
+	font-size: 16px;
+
+	&:hover,
+	&:focus {
+		transition: all .3s ease-out;
+		color: $btn-color-hover;
+		background-color: $btn-bg-hover;
+	}
+}
+
+// Form
+.label {
+	font-size: 16px;
+	font-weight: 400;
+
+	span {
+		font-weight: 300;
+	}
+}
+
+.input {
+	height: 50px;
+}

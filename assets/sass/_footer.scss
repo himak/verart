@@ -1,0 +1,92 @@
+.footer {
+	padding: 80px 0;
+
+	.form {
+		width: 30%;
+		padding-left: 40px;
+	}
+}
+
+.footer-content{
+	width: 30%;
+	margin-left: 20%;
+	padding-right: 40px;
+}
+
+.footer-title {
+	text-align: center;
+	font-size: 50px;
+	font-weight: 700;
+	margin: 0 0 80px;
+}
+
+.footer-subtitle {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0 0 30px 40px;
+}
+
+
+.footer-list {
+	
+	li {
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 24px;
+		margin-bottom: 30px;
+
+		&:before {
+			content: '';
+			background-color: $green;
+		    mask: url('../icons/checkmark-circle-outline.svg') 0 0 no-repeat;
+			mask-size: contain;
+			height: 30px;
+			min-width: 40px;
+		}
+	}
+}
+
+
+@media (max-width: $screen-lg) {
+	
+	.footer .form {
+		width: 40%;
+	}
+
+	.footer-content {
+		width: 40%;
+		margin-left: 10%;
+	}
+}
+
+
+
+@media (max-width: $screen-md) {
+	
+	.footer .form {
+		width: 100%;
+	}
+
+	.footer-content {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.footer-subtitle {
+		text-align: center;
+		margin-left: 0;
+	}
+	
+	.footer .form {
+		padding-left: 0;
+	}
+
+	.footer-content {
+	}
+}
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>VerArt</title>
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- Animate.css -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+	<header class="navigation bg-grey">
+		<div class="container">
+			<a href="#" class="logo">
+				<h1 class="logo-brand">LOGO</h1>
+			</a>
+
+			<nav class="nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="" class="nav-link">Our Robots</a>
+					</li>
+					<li class="nav-item">
+						<a href="" class="nav-link">Our Services</a>
+					</li>
+					<li class="nav-item">
+						<a href="" class="nav-link">Industries</a>
+					</li>
+					<li class="nav-item">
+						<a href="" class="nav-link">Why Our Company?</a>
+					</li>
+				</ul>
+			</nav>
+
+			<a href="#contact" class="btn">Contact us</a>
+		</div>
+	</header>
+
+	<main class="hero">
+		<div class="container">
+			<div class="hero-content">
+				<h2 class="hero-title" data-aos="fade-up" data-aos-delay="100">Versatile Robots</h2>
+				<p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">Try our robots & you don’t want others!</p>
+				<a href="" class="btn" data-aos="fade-up" data-aos-delay="500">Read more about robots</a>
+			</div>
+			<div class="hero-image" data-aos="fade-left" data-aos-delay="700"></div>
+		</div>
+	</main>
+
+	<footer class="footer bg-grey">
+		<h2 class="footer-title" data-aos="fade-up">Contact us</h2>
+
+		<div class="container">
+
+			<div class="footer-content">
+				<h3 class="footer-subtitle" data-aos="fade-up">Why contact us?</h3>
+
+				<ul class="footer-list">
+					<li data-aos="fade-up" data-aos-delay="100">You have questions and probably we have answers!</li>
+					<li data-aos="fade-up" data-aos-delay="200">Why not!</li>
+
+					<li data-aos="fade-up" data-aos-delay="300">We have online form (that’s better than nothing).</li>
+					<li data-aos="fade-up" data-aos-delay="400">Try it and you will not regret it (maybe).</li>
+				</ul>
+			</div>
+
+			<form action="#" class="form" id="contact" data-aos="fade-left" data-aos-delay="600">
+				<label for="first_name" class="label">
+					First name
+					<input type="text" class="input" id="first_name" name="first_name" placeholder="First name" required>
+				</label>
+
+				<label for="last_name" class="label">
+					Last name
+					<input type="text" class="input" id="last_name" name="last_name" placeholder="Last name" required>
+				</label>
+
+				<label for="email" class="label">
+					Email
+					<input type="email" class="input" id="email" name="email" placeholder="Email" required>
+				</label>
+
+				<label for="phone" class="label">
+					Phone number
+					<input type="tel" class="input" id="phone" name="phone" placeholder="Phone number" required>
+				</label>
+
+				<label for="question" class="label">
+					Question <span>(optional)</span>
+					<textarea id="question" name="question" placeholder="Question"></textarea>
+				</label>
+
+				<button class="btn" type="submit">Send form</button>
+			</form>
+		</div>
+	</footer>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script>
+		// Animate On Scroll Library
+		AOS.init();
+	</script>
+</body>
+</html>
